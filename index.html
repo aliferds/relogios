@@ -17,11 +17,14 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   <main>
+    <h1>Relógios</h1>
+    <h2>Relógio digital:</h2>
     <div class="digital_watch " id="watch-digital-display">
       <div class="digital_watch_container">
         <div class="digital_watch_time" id="watch-time">00:00:00</div>
       </div>
     </div>
+    <h2>Relógio analógico:</h2>
     <div class="analogic_watch">
       <div class="watch_numbers">
         <span class="number number_12">12</span>
@@ -40,6 +43,17 @@
       <div class="hours_pointer" id="hours_pointer"></div>
       <div class="minutes_pointer" id="minutes_pointer"></div>
       <div class="seconds_pointer" id="seconds_pointer"></div>
+    </div>
+    <h2>Cronometro:</h2>
+    <div class="container">
+        <code class="timer">
+            <span id="hr">00</span>:<span id="min">00</span>:<span id="sec">00</span>:<span id="dec">00</span>
+        </code>
+        <div class="button-group">
+            <button id="btn-start" onclick="chronometer()">start</button>
+            <button id="btn-stop" onclick="chronometer()">stop</button>
+            <button id="btn-reset" onclick="chronometer()">reset</button>
+        </div>
     </div>
   </main>
   <footer
