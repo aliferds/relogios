@@ -191,6 +191,7 @@ h2 {
   --rotation: 60;
   
   position: absolute;
+  border-radius: 10px;
   width: 6px;
   height: 40%;
   background-color: red;
