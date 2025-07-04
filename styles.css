@@ -1,0 +1,188 @@
+body {
+  font-family: monospace, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  caret-color: transparent;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.digital_watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  width: 250px;
+  height: 100px;
+  background-color: #111;
+}
+.digital_watch_time {
+  font-size: 3rem;
+  color: #3ccc90;
+}
+.digital_watch_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #f8f9fa;
+  height: 5em;
+  padding: 0 10px;
+  margin: auto;
+  background-color: #7fffd4;
+}
+
+.analogic_watch {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: relative;
+  background-color: #ffffbb;
+}
+.watch_numbers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.watch_numbers span {
+  position: absolute;
+  font-size: 12px;
+  color: #555;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 0%;
+  margin-top: -6px;
+  text-align: center;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.watch_numbers span:nth-child(1) {
+  transform: rotate(0deg) translateY(-140px) rotateZ(0deg);
+  margin-left: -8px;
+}
+.watch_numbers span:nth-child(2) {
+  transform: rotate(30deg) translateY(-140px) rotateZ(-30deg);
+  margin-left: -6px;
+}
+.watch_numbers span:nth-child(2)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(3) {
+  transform: rotate(60deg) translateY(-140px) rotateZ(-60deg);
+  margin-left: -6px;
+}
+.watch_numbers span:nth-child(3)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(4) {
+  transform: rotate(90deg) translateY(-140px) rotateZ(-90deg);
+  margin-left: -6px;
+}
+.watch_numbers span:nth-child(4)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(5) {
+  transform: rotate(120deg) translateY(-140px) rotateZ(-120deg);
+  margin-left: -6px;
+}
+.watch_numbers span:nth-child(5)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(6) {
+  transform: rotate(150deg) translateY(-140px) rotateZ(-150deg);
+  margin-left: -6px;
+}
+.watch_numbers span:nth-child(6)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(7) {
+  transform: rotate(180deg) translateY(-140px) rotateZ(-180deg);
+  margin-left: -10px;
+}
+.watch_numbers span:nth-child(7)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(8) {
+  transform: rotate(210deg) translateY(-140px) rotateZ(-210deg);
+  margin-left: -12px;
+}
+.watch_numbers span:nth-child(8)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(9) {
+  transform: rotate(240deg) translateY(-140px) rotateZ(-240deg);
+  margin-left: -12px;
+}
+.watch_numbers span:nth-child(9)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(10) {
+  transform: rotate(270deg) translateY(-140px) rotateZ(-270deg);
+  margin-left: -12px;
+}
+.watch_numbers span:nth-child(10)::first-letter {
+  color: transparent;
+}
+.watch_numbers span:nth-child(11) {
+  transform: rotate(300deg) translateY(-140px) rotateZ(-300deg);
+  margin-left: -7px;
+}
+.watch_numbers span:nth-child(12) {
+  transform: rotate(330deg) translateY(-140px) rotateZ(-330deg);
+  margin-left: -7px;
+}
+
+.hours_pointer {
+  --rotation: 0;
+  
+  position: absolute;
+  width: 8px;
+  height: 40%;
+  top: 10%;
+  left: 50%;
+  background-color: #333;
+  transform: translateX(-55%) rotate(calc(var(--rotation)*1deg));
+  transform-origin: bottom;
+  border-radius: 10px;
+}
+
+.minutes_pointer{
+  --rotation: 30;
+
+  position: absolute;
+  width: 8px;
+  height: 36%;
+  top: 14%;
+  left: 50%;
+  background-color: #333;
+  transform: translateX(-63%) rotate(calc(var(--rotation)*1deg));
+  transform-origin: bottom;
+  border-radius: 10px;
+}
+
+.seconds_pointer{
+  --rotation: 60;
+  
+  position: absolute;
+  width: 6px;
+  height: 40%;
+  background-color: red;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-60%) rotate(calc(var(--rotation)*1deg));
+  transform-origin: bottom;
+}
